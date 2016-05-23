@@ -23,8 +23,8 @@ void Interpreter::doCommand(char *com)
     switch (com[0])
     {
     case 'M':
-        break;
-    case 'G'://komendy G
+        break; // Komendy M
+    case 'G':
         break;
     }
 }
