@@ -105,3 +105,19 @@ int Interpreter::getInt(char* com, int startPos)
         result = -result;
     return result;
 }
+
+void Interpreter::G1(char* com)
+{
+    int pos = 0;
+    float x, y, speed;
+    while(com[pos] != 'X')
+        pos++;
+    x = getFloat(com, pos);
+    while(com[pos] != 'Y')
+        pos++;
+    y = getFloat(com, pos);
+    while(com[pos] != 'F')
+        pos++;
+    speed = getFloat(com, pos);
+    m_board.setPos(x, y, speed);
+}
