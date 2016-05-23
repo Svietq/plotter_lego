@@ -23,8 +23,28 @@ void Interpreter::doCommand(char *com)
     switch (com[0])
     {
     case 'M':
-        break; // Komendy M
+        switch (getInt(com, 1))
+        {
+        case 300:
+            break;
+        default:
+            break;
+        }
+        break;
     case 'G':
+        switch (getInt(com, 1))
+        {
+        case 1:
+            break;
+        case 4:
+            break;
+        case 92:
+            break;
+        default:
+            break;
+        }
+        break;
+    default:
         break;
     }
 }
