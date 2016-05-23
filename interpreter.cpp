@@ -24,7 +24,7 @@ void Interpreter::doCommand(char *com)
     {
     case 'M':
         break;
-    case 'G':
+    case 'G'://komendy G
         break;
     }
 }
