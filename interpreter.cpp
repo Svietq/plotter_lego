@@ -121,3 +121,21 @@ void Interpreter::G1(char* com)
     speed = getFloat(com, pos);
     m_board.setPos(x, y, speed);
 }
+
+void Interpreter::M300(char* com)
+{
+    int pen, pos = 0;
+    while(com[pos] != 'S')
+        pos++;
+    pen = getInt(com, pos);
+    switch (pen)
+    {
+    case 30:
+        m_servo.setPen1();
+        break;
+    case 50:
+        m_servo.setOff();
+    default:
+        break;
+    }
+}
