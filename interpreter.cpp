@@ -139,3 +139,8 @@ void Interpreter::M300(char* com)
         break;
     }
 }
+
+void Interpreter::G92(char* com)
+{
+    m_board.home();
+}
