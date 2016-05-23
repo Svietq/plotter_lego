@@ -1,7 +1,7 @@
 #ifndef INTERPRETER_H
 #define INTERPRETER_H
 #include "board.h"
-
+#include "servo.h"
 class Interpreter
 {
     public:
@@ -12,6 +12,7 @@ class Interpreter
     protected:
     private:
         Board m_board;
+        Servo m_servo;
         float getFloat(char* com, int startPos);
         int getInt(char* com, int startPos);
         void M300(char* com);
