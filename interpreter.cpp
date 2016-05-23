@@ -26,6 +26,7 @@ void Interpreter::doCommand(char *com)
         switch (getInt(com, 1))
         {
         case 300:
+            M300(com);
             break;
         default:
             break;
@@ -35,10 +36,13 @@ void Interpreter::doCommand(char *com)
         switch (getInt(com, 1))
         {
         case 1:
+            G1(com);
             break;
         case 4:
+            G4(com);
             break;
         case 92:
+            G92(com);
             break;
         default:
             break;
