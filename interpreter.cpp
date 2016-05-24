@@ -148,3 +148,17 @@ void Interpreter::G92(char* com)
 {
     m_board.home();
 }
+
+void Interpreter::G4(char *com)
+{
+    int num=0;
+    int pos = 0;
+    while(com[pos]!='P')
+    {
+        pos++;
+    }
+    ++pos;
+    num = getInt(com,pos);
+
+    //SLEEP(num);
+}
