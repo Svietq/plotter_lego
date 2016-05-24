@@ -6,12 +6,6 @@
 
 class Interpreter
 {
-    public:
-        Interpreter();
-        virtual ~Interpreter();
-        void doCommand(char* com);
-        float check(char* com);
-    protected:
     private:
         Board m_board;
         Servo m_servo;
@@ -23,6 +17,11 @@ class Interpreter
         void G92(char* com);
         File m_file = File("test.gcode");
         void drawFromFile();
+    public:
+        Interpreter();
+        virtual ~Interpreter();
+        void doCommand(char* com);
+        float check(char* com);
 
 };
 
