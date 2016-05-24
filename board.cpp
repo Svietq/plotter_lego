@@ -69,3 +69,9 @@ void Board::setPos(int x2, int y2, int speed)
         }
     }
 }
+
+void Board::home()
+{
+    setPos(0,0,10);
+}
+
