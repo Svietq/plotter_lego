@@ -4,12 +4,15 @@
 class Engine
 {
     const double radius{5}; //of pulley
-    const double rps{3}; //radians per step
+    const double spc{3}; //steps per circle
 
 public:
     Engine();
-    void rotate(int steps);
-    double engine_const();
+    virtual ~Engine();
+    void setLength(float x);
+    float getLength();
+protected:
+private:
 
 };
 
