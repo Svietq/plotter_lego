@@ -15,11 +15,11 @@ Board::Board()
 
 void Board::setPos(float x2, float y2, int speed)
 {
-    Line line1 = recalc_length(_head->get_pos().x, _head->get_pos().y);/////////////
+    Line line1 = recalc_length(_head->get_pos().x, _head->get_pos().y);//oblicza długość linek w początkowych coordach
 
     float x1 = _head->get_pos().x;
     float y1 = _head->get_pos().y;
-    _head->set_pos(x2,y2);
+    _head->set_pos(x2,y2); 
 
     const bool steep = (fabs(y2 - y1) > fabs(x2 - x1));
     if(steep)
