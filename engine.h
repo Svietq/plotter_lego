@@ -1,6 +1,8 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
+#include <hFramework.h>
+
 class Engine
 {
     const double m_radius{5}; //of pulley
@@ -9,10 +11,12 @@ class Engine
 
 public:
     Engine();
+    Engine(int id);
     virtual ~Engine();
     void setLength(float x);
     float getLength();
     const double m_engine_const = m_radius * m_rps;
+    void rotate(int steps);
 protected:
 private:
     double m_spmm; // steps per milimeter
