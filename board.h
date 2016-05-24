@@ -35,7 +35,7 @@ class Board
 
 public:
     Board();   
-    void setPos(int x2, int y2);
+    void setPos(int x2, int y2, int speed);
     void home();
 
 };
