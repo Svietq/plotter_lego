@@ -9,8 +9,8 @@ Board::Line Board::recalc_length(int ix, int iy)
 
 Board::Board()
 {
-    _engine1 = new Engine(1);
-    _engine2 = new Engine(2);
+    _engine1 = new Engine(hMot1);
+    _engine2 = new Engine(hMot2);
 }
 
 void Board::setPos(float x2, float y2, int speed)
