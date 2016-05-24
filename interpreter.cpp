@@ -112,12 +112,15 @@ void Interpreter::G1(char* com)
     float x, y, speed;
     while(com[pos] != 'X')
         pos++;
+    pos++;
     x = getFloat(com, pos);
     while(com[pos] != 'Y')
         pos++;
+    pos++;
     y = getFloat(com, pos);
     while(com[pos] != 'F')
         pos++;
+    pos++;
     speed = getFloat(com, pos);
     m_board.setPos(x, y, speed);
 }
@@ -127,6 +130,7 @@ void Interpreter::M300(char* com)
     int pen, pos = 0;
     while(com[pos] != 'S')
         pos++;
+    pos++;
     pen = getInt(com, pos);
     switch (pen)
     {
