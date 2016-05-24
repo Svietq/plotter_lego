@@ -2,6 +2,8 @@
 #define INTERPRETER_H
 #include "board.h"
 #include "servo.h"
+#include "file.h"
+
 class Interpreter
 {
     public:
@@ -19,7 +21,8 @@ class Interpreter
         void G1(char* com);
         void G4(char* com);
         void G92(char* com);
-
+        File m_file = File("test.gcode");
+        void drawFromFile();
 
 };
 
