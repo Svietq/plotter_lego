@@ -162,3 +162,12 @@ void Interpreter::G4(char *com)
 
     //SLEEP(num);
 }
+
+void Interpreter::drawFromFile()
+{
+    vector<char*> lines(m_file.read_file());
+    for(char* c:lines)
+    {
+        doCommand(c);
+    }
+}
