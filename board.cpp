@@ -13,7 +13,7 @@ Board::Board()
     _engine2 = new Engine(2);
 }
 
-void Board::setPos(int x2, int y2)
+void Board::setPos(int x2, int y2, int speed)
 {
     Line line1 = recalc_length(_head->get_pos().x, _head->get_pos().y);/////////////
 
