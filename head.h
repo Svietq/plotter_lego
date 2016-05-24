@@ -12,8 +12,8 @@ class Head
     private:
         struct Pos
         {
-            int x;
-            int y;
+            float x;
+            float y;
         }pos{5,19};
 
         enum class pen_status{Red, Blue, None};
