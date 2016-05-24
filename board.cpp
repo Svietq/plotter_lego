@@ -15,10 +15,10 @@ Board::Board()
 
 void Board::setPos(float x2, float y2, int speed)
 {
-    Line line1 = recalc_length(_head->get_pos().x, _head->get_pos().y);// pobranie koordynatow glowicy, poczatkowe dlugosci linek
+    Line line1 = recalc_length(_head->get_pos().x, _head->get_pos().y);/////////////
 
-    int x1 = _head->get_pos().x;
-    int y1 = _head->get_pos().y;
+    float x1 = _head->get_pos().x;
+    float y1 = _head->get_pos().y;
     _head->set_pos(x2,y2);
 
     const bool steep = (fabs(y2 - y1) > fabs(x2 - x1));
@@ -41,23 +41,27 @@ void Board::setPos(float x2, float y2, int speed)
     const int ystep = (y1 < y2) ? 1 : -1;
     int y = (int)y1;
 
-    const int maxX = (int)x2;
+    const float maxX = (float)x2;
 
-    for(int x=(int)x1; x<maxX; x++)
+    for(float x=(float)x1; x<maxX; x+=0.05)
     {
         Line line2 = recalc_length(x, y);                       ///////
         int n1 = (line2.a-line1.a)/_engine1->m_engine_const;    //////
         int n2 = (line2.b-line1.b)/_engine2->m_engine_const;    /////
         if(steep)
         {
-            _engine1->rotate(n1);                               /////
-            _engine2->rotate(n2);                               /////
+            _engine1->setLengthSteps(_engine1->getLengthSteps()+n1);
+            _engine2->setLengthSteps(_engine2->getLengthSteps()+n2);
+//            _engine1->rotate(n1);                               /////
+//            _engine2->rotate(n2);                               /////
 //          board._board[x][y]=1;/////////////////////////////////////////
         }
         else
         {
-            _engine1->rotate(-n1);                              /////
-            _engine2->rotate(-n2);                              /////
+            _engine1->setLengthSteps(-(_engine1->getLengthSteps()+n1));
+            _engine2->setLengthSteps(-(_engine2->getLengthSteps()+n2));
+//            _engine1->rotate(-n1);                              /////
+//            _engine2->rotate(-n2);                              /////
 //          board._board[y][x]=1;/////////////////////////////////////////
         }
 
