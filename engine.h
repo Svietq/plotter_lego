@@ -15,6 +15,8 @@ public:
     virtual ~Engine();
     void setLength(float x);
     float getLength();
+    void setLengthSteps(int x);
+    int getLengthSteps();
     const double m_engine_const = m_radius * m_rps;
     void rotate(int steps);
 protected:
