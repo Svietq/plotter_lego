@@ -1,6 +1,6 @@
 #include "board.h"
 
-Board::Line Board::recalc_length(int ix, int iy)
+Board::Line Board::recalc_length(int ix, int iy) 
 {
     line.a = sqrt(pow(ix,2) + pow(iy,2));
     line.b = sqrt(dist*(dist-2*ix)+iy*iy+ix*ix);
@@ -13,9 +13,9 @@ Board::Board()
     _engine2 = new Engine(2);
 }
 
-void Board::setPos(int x2, int y2, int speed)
+void Board::setPos(float x2, float y2, int speed)
 {
-    Line line1 = recalc_length(_head->get_pos().x, _head->get_pos().y);/////////////
+    Line line1 = recalc_length(_head->get_pos().x, _head->get_pos().y);// pobranie koordynatow glowicy, poczatkowe dlugosci linek
 
     int x1 = _head->get_pos().x;
     int y1 = _head->get_pos().y;
