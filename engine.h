@@ -3,8 +3,8 @@
 
 class Engine
 {
-    const double radius{5}; //of pulley
-    const double spc{3}; //steps per circle
+    const double m_radius{5}; //of pulley
+    const double m_spc{720}; //steps per circle
 
 public:
     Engine();
@@ -13,6 +13,7 @@ public:
     float getLength();
 protected:
 private:
+    double m_spmm; // steps per milimeter
 
 };
 
