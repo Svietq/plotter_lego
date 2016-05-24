@@ -12,8 +12,6 @@ Board::Board()
 
 }
 
-
-
 void Board::setPos(int x2, int y2)
 {
     Line line1 = recalc_length(_head->get_pos().x, _head->get_pos().y);/////////////
@@ -47,8 +45,8 @@ void Board::setPos(int x2, int y2)
     for(int x=(int)x1; x<maxX; x++)
     {
         Line line2 = recalc_length(x, y);                       ///////
-        int n1 = (line2.a-line1.a)/_engine1->engine_const();    //////
-        int n2 = (line2.b-line1.b)/_engine2->engine_const();    /////
+        int n1 = (line2.a-line1.a)/_engine1->m_engine_const;    //////
+        int n2 = (line2.b-line1.b)/_engine2->m_engine_const;    /////
         if(steep)
         {
             _engine1->rotate(n1);                               /////
