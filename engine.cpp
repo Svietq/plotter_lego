@@ -21,3 +21,10 @@ void Engine::rotate(int steps)
         hMot2.rotRel(steps);
     }
 }
+
+void setLengthSteps(int x)
+{
+      
+}
+}
+    int getLengthSteps();
