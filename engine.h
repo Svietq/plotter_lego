@@ -19,7 +19,7 @@ public:
     int getLengthSteps();
     void resetEncoder();
     const double m_engine_const = m_radius * m_rps;
-    void rotate(int steps
+    void rotate(int steps);
     int mmToSteps(float x);
 protected:
 private:
