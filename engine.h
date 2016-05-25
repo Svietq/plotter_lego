@@ -11,17 +11,20 @@ class Engine
 
 public:
     Engine();
-    Engine(int id);
+    Engine(hMotor motor);
     virtual ~Engine();
     void setLength(float x);
     float getLength();
     void setLengthSteps(int x);
     int getLengthSteps();
+    void resetEncoder();
     const double m_engine_const = m_radius * m_rps;
-    void rotate(int steps);
+    void rotate(int steps
+    int mmToSteps(float x);
 protected:
 private:
     double m_spmm; // steps per milimeter
+    hMotor m_motor;
 
 };
 
