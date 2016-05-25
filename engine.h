@@ -5,14 +5,14 @@
 
 class Engine
 {
-    const double m_radius{5}; //of pulley
+    const double m_radius{2}; //of pulley
     const double m_spc{720}; //steps per circle
     const double m_rps{3}; //radians per step
 
 public:
     Engine();
-    Engine(hMotor motor);
-    virtual ~Engine();
+    ~Engine();
+    void setMotorId(int id);
     void setLength(float x);
     float getLength();
     void setLengthSteps(int x);
@@ -24,7 +24,7 @@ public:
 protected:
 private:
     double m_spmm; // steps per milimeter
-    hMotor m_motor;
+    int m_motorid;
 
 };
 

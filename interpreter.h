@@ -2,7 +2,7 @@
 #define INTERPRETER_H
 #include "board.h"
 #include "servo.h"
-#include "file.h"
+//#include "file.h"
 
 class Interpreter
 {
@@ -15,11 +15,11 @@ class Interpreter
         void G1(char* com);
         void G4(char* com);
         void G92(char* com);
-        File m_file = File("test.gcode");
+        //File m_file = File("test.gcode");
         void drawFromFile();
     public:
         Interpreter();
-        virtual ~Interpreter();
+        ~Interpreter();
         void doCommand(char* com);
         float check(char* com);
 

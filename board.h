@@ -4,12 +4,6 @@
 #include "head.h"
 #include "engine.h"
 
-#include <vector>
-#include <iostream>
-#include <algorithm>
-#include <sstream>
-#include <string>
-#include <fstream>
 
 using namespace std;
 
@@ -20,10 +14,10 @@ class Board
         int y;
     }dim={20,20};
 
-    const double dist{10};//between pulleys' edges
+    const double dist{1000};//between pulleys' edges
     Head *_head;
-    Engine *_engine1;
-    Engine *_engine2;
+    Engine _engine1;
+    Engine _engine2;
 
     struct Line
     {
@@ -34,8 +28,8 @@ class Board
     Line recalc_length(int ix, int iy);
 
 public:
-    Board();   
-    void setPos(int x2, int y2, int speed);
+    Board();
+    void setPos(float x2, float y2, float speed);
     void home();
 
 };

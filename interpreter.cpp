@@ -1,4 +1,4 @@
-#include <iostream>
+
 #include "interpreter.h"
 using namespace std;
 Interpreter::Interpreter()
@@ -151,23 +151,23 @@ void Interpreter::G92(char* com)
 
 void Interpreter::G4(char *com)
 {
-    int num=0;
+    //int num=0;
     int pos = 0;
     while(com[pos]!='P')
     {
         pos++;
     }
     ++pos;
-    num = getInt(com,pos);
+    //num = getInt(com,pos);
 
     //SLEEP(num);
 }
 
 void Interpreter::drawFromFile()
 {
-    vector<char*> lines(m_file.read_file());
-    for(char* c:lines)
-    {
-        doCommand(c);
-    }
+    //vector<char*> lines(m_file.read_file());
+    //for(char* c:lines)
+    //{
+     //   doCommand(c);
+    //}
 }

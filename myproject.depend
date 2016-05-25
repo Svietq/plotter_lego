@@ -1,0 +1,226 @@
+# depslib dependency file v1.0
+1464178540 source:/home/student/Pulpit/project_template/main.cpp
+	<hFramework.h>
+	<stdio.h>
+	"Lego_Touch.h"
+	<DistanceSensor.h>
+
+1455202578 /home/student/Pulpit/include/hFramework.h
+	"hSystem.h"
+	"hMotor.h"
+	"hCAN.h"
+	"hExt.h"
+	"hSensor.h"
+	"hSD.h"
+	"hLED.h"
+	"hSerial.h"
+	"hUSB.h"
+	"hQueue.h"
+	"hMutex.h"
+	"hTypes.h"
+	"hEventBits.h"
+	"hServo.h"
+	"hButton.h"
+	"hUtils.h"
+	"hStorage.h"
+	"hElapsedTimer.h"
+	"hPrintf.h"
+	"hStreamDev.h"
+	"hPrintfDev.h"
+	"hPacketDev.h"
+	"hPIDRegulator.h"
+	"hMath.h"
+	"ycm.h"
+
+1450710564 /home/student/Pulpit/include/hSystem.h
+	<stdarg.h>
+	<functional>
+	<hTypes.h>
+	<hStorage.h>
+	<hPrintfDev.h>
+
+1450710564 /home/student/Pulpit/include/hTypes.h
+	<stdint.h>
+	<stddef.h>
+
+1446741027 /home/student/Pulpit/include/hStorage.h
+	<hSystem.h>
+	<hMutex.h>
+
+1446741027 /home/student/Pulpit/include/hMutex.h
+	<hTypes.h>
+
+1450710564 /home/student/Pulpit/include/hPrintfDev.h
+	<stdarg.h>
+	<hTypes.h>
+	<hStreamDev.h>
+	<hMutex.h>
+
+1455202578 /home/student/Pulpit/include/hStreamDev.h
+	"hTypes.h"
+	<stdarg.h>
+
+1455202578 /home/student/Pulpit/include/hMotor.h
+	"hTypes.h"
+	"hServo.h"
+	"hRegulator.h"
+
+1443612845 /home/student/Pulpit/include/hServo.h
+	"hTypes.h"
+	"hExt.h"
+
+1443612845 /home/student/Pulpit/include/hExt.h
+	"hTypes.h"
+	"hGPIO.h"
+	"hSerial.h"
+	"hI2C.h"
+	"hSPI.h"
+	"hMutex.h"
+
+1443612845 /home/student/Pulpit/include/hGPIO.h
+	<stdbool.h>
+	"hTypes.h"
+
+1450710564 /home/student/Pulpit/include/hSerial.h
+	<stdarg.h>
+	"hTypes.h"
+	"hGPIO.h"
+	"hPrintfDev.h"
+
+1443612845 /home/student/Pulpit/include/hI2C.h
+	<stdint.h>
+	"hTypes.h"
+	"hGPIO.h"
+
+1443612845 /home/student/Pulpit/include/hSPI.h
+	<stdint.h>
+	"hTypes.h"
+	"hGPIO.h"
+
+1450710564 /home/student/Pulpit/include/hRegulator.h
+	"hTypes.h"
+
+1443612845 /home/student/Pulpit/include/hCAN.h
+	"hTypes.h"
+
+1443612845 /home/student/Pulpit/include/hSensor.h
+	"hTypes.h"
+	"hI2C.h"
+	"hGPIO.h"
+	"hSerial.h"
+
+1443612845 /home/student/Pulpit/include/hSD.h
+	"hTypes.h"
+	"hMutex.h"
+	"hPrintfDev.h"
+
+1443612845 /home/student/Pulpit/include/hLED.h
+	"hTypes.h"
+	"hGPIO.h"
+
+1443612845 /home/student/Pulpit/include/hUSB.h
+	"hFramework.h"
+
+1443612845 /home/student/Pulpit/include/hQueue.h
+	"gqueue.h"
+	"hSystem.h"
+
+1443612845 /home/student/Pulpit/include/gqueue.h
+	"hTypes.h"
+
+1443612845 /home/student/Pulpit/include/hEventBits.h
+	"hTypes.h"
+
+1443612845 /home/student/Pulpit/include/hButton.h
+	"hTypes.h"
+	"hGPIO.h"
+
+1443612845 /home/student/Pulpit/include/hUtils.h
+	<stdarg.h>
+	<stdlib.h>
+	"hTypes.h"
+	"ycm.h"
+
+1443612845 /home/student/Pulpit/include/ycm.h
+	"../Libraries/hPeriph/myADC.c"
+	"../Libraries/hMotor/hMotor.cpp"
+	"../Libraries/Other/hGPIO.cpp"
+	"../Libraries/hPeriph/myGPIO.c"
+	"../Libraries/hPeriph/myI2C.c"
+	"../Libraries/hPeriph/myPWM.c"
+	"../Libraries/hPeriph/myPWM.h"
+	"../Libraries/Other/hI2C.cpp"
+	"../Libraries/Other/hSoftwareI2C.cpp"
+	"../Libraries/hSensor/hSensor.cpp"
+	"../Libraries/hSystem/hSystem.cpp"
+	"../Libraries/hMotor/hMotor_lowLevel.c"
+	"../Libraries/hMotor/hRegulator_default_pos.cpp"
+	"../Libraries/hPeriph/myEncoder.c"
+
+1443612845 /home/student/Pulpit/include/hElapsedTimer.h
+	<hFramework.h>
+
+1443612845 /home/student/Pulpit/include/hPrintf.h
+	<functional>
+
+1443612845 /home/student/Pulpit/include/hPacketDev.h
+
+1450710564 /home/student/Pulpit/include/hPIDRegulator.h
+	"hRegulator.h"
+	"hPID.h"
+
+1455202578 /home/student/Pulpit/include/hPID.h
+	<cstdint>
+
+1455202578 /home/student/Pulpit/include/hMath.h
+	<stdio.h>
+	<cmath>
+
+1442679982 /home/student/Pulpit/include/hSensors/Lego_Touch.h
+	<hFramework.h>
+
+1446741041 /home/student/Pulpit/include/DistanceSensor.h
+	<hFramework.h>
+
+1464190302 source:/home/student/Pulpit/ploter/main.cpp
+	<hFramework.h>
+	<stdio.h>
+	"engine.h"
+	"interpreter.h"
+
+1464190302 source:/home/student/Pulpit/ploter/board.cpp
+	"board.h"
+
+1464188617 /home/student/Pulpit/ploter/board.h
+	"head.h"
+	"engine.h"
+
+1464180080 /home/student/Pulpit/ploter/head.h
+	"engine.h"
+	<math.h>
+	<algorithm>
+
+1464189508 /home/student/Pulpit/ploter/engine.h
+	<hFramework.h>
+
+1464189902 source:/home/student/Pulpit/ploter/engine.cpp
+	"engine.h"
+
+1464180080 source:/home/student/Pulpit/ploter/head.cpp
+	"head.h"
+
+1464183637 source:/home/student/Pulpit/ploter/servo.cpp
+	"servo.h"
+
+1464184062 /home/student/Pulpit/ploter/servo.h
+	<hFramework.h>
+
+1464185179 source:/home/student/Pulpit/ploter/interpreter.cpp
+	"interpreter.h"
+
+1464184421 /home/student/Pulpit/ploter/interpreter.h
+	"board.h"
+	"servo.h"
+
+1464183880 source:/home/student/Pulpit/ploter/file.cpp
+

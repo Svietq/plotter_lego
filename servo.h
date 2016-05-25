@@ -1,7 +1,7 @@
 #ifndef SERVO_H
 #define SERVO_H
 
-
+#include <hFramework.h>
 class Servo
 {
     public:
@@ -9,7 +9,7 @@ class Servo
         void setPen1();
         void setPen2();
         void setOff();
-        virtual ~Servo();
+        ~Servo();
     protected:
     private:
 };
