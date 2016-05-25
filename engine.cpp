@@ -1,30 +1,47 @@
 #include "engine.h"
 
-Engine::Engine()
+Engine::Engine(hMotor motor)
 {
-
-}
-
-Engine::Engine(int id):m_id(id)
-{
-
+    m_motor = motor;
+    m_spmm = m_spc / (m_radius * 3.1415);
 }
 
 void Engine::rotate(int steps)
 {
-    if(m_id==1)
-    {
-        hMot1.rotRel(steps);
-    }
-    else if(m_id==2)
-    {
-        hMot2.rotRel(steps);
-    }
+    m_motor.rotRel(x);
 }
 
 void setLengthSteps(int x)
 {
-      
+    m_motor.rotAbs(x);
 }
+
+int getLengthSteps();
+{
+    return m_motor.getEncoderCnt();
 }
-    int getLengthSteps();
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+void Engine::resetEncoder()
+{
+    m_motor.resetEncoderCnt();
+}
+
+int Engine::mmToSteps(float x)
+{
+    return x * m_spmm;
+}
+
+void Engine::setLength(float x)
+{
+    setLengthSteps(mmToSteps(x))
+}
+
+float Engine::getLength()
+{
+    return m_motor.getEncoderCnt()/m_spmm;
+}
+
