@@ -13,13 +13,13 @@ public:
     Engine();
     ~Engine();
     void setMotorId(int id);
-    void setLength(float x);
+    void setLength(float x, int speed = 1000);
     float getLength();
-    void setLengthSteps(int x);
+    void setLengthSteps(int x, int speed = 1000);
     int getLengthSteps();
     void resetEncoder();
     const double m_engine_const = m_radius * m_rps;
-    void rotate(int steps);
+    void rotate(int steps, int speed = 1000);
     int mmToSteps(float x);
 protected:
 private:

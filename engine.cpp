@@ -12,20 +12,20 @@ void Engine::setMotorId(int id)
 {
     m_motorid = id;
 }
-void Engine::rotate(int x)
+void Engine::rotate(int x, int speed)
 {
     if(m_motorid == 1)
-        hMot1.rotRel(x);
+        hMot1.rotRel(x, speed);
     else
-        hMot2.rotRel(x);
+        hMot2.rotRel(x, speed);
 }
 
-void Engine::setLengthSteps(int x)
+void Engine::setLengthSteps(int x, int speed)
 {
     if(m_motorid == 1)
-        hMot1.rotAbs(x, 200);
+        hMot1.rotAbs(x, speed);
     else
-        hMot2.rotAbs(x, 200);
+        hMot2.rotAbs(x, speed);
 }
 
 int Engine::getLengthSteps()
@@ -36,9 +36,9 @@ int Engine::getLengthSteps()
         return hMot2.getEncoderCnt();
 }
 
-/** @brief (one liner)
+/** @brief Resetowanie enkodera
   *
-  * (documentation goes here)
+  * Uzycie wbudowanych funkcji silinkow do zresetowania enkodera
   */
 void Engine::resetEncoder()
 {
@@ -53,9 +53,9 @@ int Engine::mmToSteps(float x)
     return x * m_spmm;
 }
 
-void Engine::setLength(float x)
+void Engine::setLength(float x, int speed)
 {
-    setLengthSteps(mmToSteps(x));
+    setLengthSteps(mmToSteps(x), speed);
 }
 
 float Engine::getLength()

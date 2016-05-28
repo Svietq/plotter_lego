@@ -224,3 +224,213 @@
 
 1464183880 source:/home/student/Pulpit/ploter/file.cpp
 
+1464163266 source:d:\programowanie\plotter_lego-master\file.cpp
+
+1464163266 source:d:\programowanie\plotter_lego-master\head.cpp
+	"head.h"
+
+1464163266 d:\programowanie\plotter_lego-master\head.h
+	"engine.h"
+	<math.h>
+	<algorithm>
+
+1464252182 d:\programowanie\plotter_lego-master\engine.h
+	<hFramework.h>
+
+1455202578 e:\pakiety\robo\include\hframework.h
+	"hSystem.h"
+	"hMotor.h"
+	"hCAN.h"
+	"hExt.h"
+	"hSensor.h"
+	"hSD.h"
+	"hLED.h"
+	"hSerial.h"
+	"hUSB.h"
+	"hQueue.h"
+	"hMutex.h"
+	"hTypes.h"
+	"hEventBits.h"
+	"hServo.h"
+	"hButton.h"
+	"hUtils.h"
+	"hStorage.h"
+	"hElapsedTimer.h"
+	"hPrintf.h"
+	"hStreamDev.h"
+	"hPrintfDev.h"
+	"hPacketDev.h"
+	"hPIDRegulator.h"
+	"hMath.h"
+	"ycm.h"
+
+1450710564 e:\pakiety\robo\include\hsystem.h
+	<stdarg.h>
+	<functional>
+	<hTypes.h>
+	<hStorage.h>
+	<hPrintfDev.h>
+
+1450710564 e:\pakiety\robo\include\htypes.h
+	<stdint.h>
+	<stddef.h>
+
+1446741028 e:\pakiety\robo\include\hstorage.h
+	<hSystem.h>
+	<hMutex.h>
+
+1446741028 e:\pakiety\robo\include\hmutex.h
+	<hTypes.h>
+
+1450710564 e:\pakiety\robo\include\hprintfdev.h
+	<stdarg.h>
+	<hTypes.h>
+	<hStreamDev.h>
+	<hMutex.h>
+
+1455202578 e:\pakiety\robo\include\hstreamdev.h
+	"hTypes.h"
+	<stdarg.h>
+
+1455202578 e:\pakiety\robo\include\hmotor.h
+	"hTypes.h"
+	"hServo.h"
+	"hRegulator.h"
+
+1443609246 e:\pakiety\robo\include\hservo.h
+	"hTypes.h"
+	"hExt.h"
+
+1443609246 e:\pakiety\robo\include\hext.h
+	"hTypes.h"
+	"hGPIO.h"
+	"hSerial.h"
+	"hI2C.h"
+	"hSPI.h"
+	"hMutex.h"
+
+1443609246 e:\pakiety\robo\include\hgpio.h
+	<stdbool.h>
+	"hTypes.h"
+
+1450710564 e:\pakiety\robo\include\hserial.h
+	<stdarg.h>
+	"hTypes.h"
+	"hGPIO.h"
+	"hPrintfDev.h"
+
+1443609246 e:\pakiety\robo\include\hi2c.h
+	<stdint.h>
+	"hTypes.h"
+	"hGPIO.h"
+
+1443609246 e:\pakiety\robo\include\hspi.h
+	<stdint.h>
+	"hTypes.h"
+	"hGPIO.h"
+
+1450710564 e:\pakiety\robo\include\hregulator.h
+	"hTypes.h"
+
+1443609246 e:\pakiety\robo\include\hcan.h
+	"hTypes.h"
+
+1443609246 e:\pakiety\robo\include\hsensor.h
+	"hTypes.h"
+	"hI2C.h"
+	"hGPIO.h"
+	"hSerial.h"
+
+1443609246 e:\pakiety\robo\include\hsd.h
+	"hTypes.h"
+	"hMutex.h"
+	"hPrintfDev.h"
+
+1443609246 e:\pakiety\robo\include\hled.h
+	"hTypes.h"
+	"hGPIO.h"
+
+1443609246 e:\pakiety\robo\include\husb.h
+	"hFramework.h"
+
+1443609246 e:\pakiety\robo\include\hqueue.h
+	"gqueue.h"
+	"hSystem.h"
+
+1443609246 e:\pakiety\robo\include\gqueue.h
+	"hTypes.h"
+
+1443609246 e:\pakiety\robo\include\heventbits.h
+	"hTypes.h"
+
+1443609246 e:\pakiety\robo\include\hbutton.h
+	"hTypes.h"
+	"hGPIO.h"
+
+1443609246 e:\pakiety\robo\include\hutils.h
+	<stdarg.h>
+	<stdlib.h>
+	"hTypes.h"
+	"ycm.h"
+
+1443609246 e:\pakiety\robo\include\ycm.h
+	"../Libraries/hPeriph/myADC.c"
+	"../Libraries/hMotor/hMotor.cpp"
+	"../Libraries/Other/hGPIO.cpp"
+	"../Libraries/hPeriph/myGPIO.c"
+	"../Libraries/hPeriph/myI2C.c"
+	"../Libraries/hPeriph/myPWM.c"
+	"../Libraries/hPeriph/myPWM.h"
+	"../Libraries/Other/hI2C.cpp"
+	"../Libraries/Other/hSoftwareI2C.cpp"
+	"../Libraries/hSensor/hSensor.cpp"
+	"../Libraries/hSystem/hSystem.cpp"
+	"../Libraries/hMotor/hMotor_lowLevel.c"
+	"../Libraries/hMotor/hRegulator_default_pos.cpp"
+	"../Libraries/hPeriph/myEncoder.c"
+
+1443609246 e:\pakiety\robo\include\helapsedtimer.h
+	<hFramework.h>
+
+1443609246 e:\pakiety\robo\include\hprintf.h
+	<functional>
+
+1443609246 e:\pakiety\robo\include\hpacketdev.h
+
+1450710564 e:\pakiety\robo\include\hpidregulator.h
+	"hRegulator.h"
+	"hPID.h"
+
+1455202578 e:\pakiety\robo\include\hpid.h
+	<cstdint>
+
+1455202578 e:\pakiety\robo\include\hmath.h
+	<stdio.h>
+	<cmath>
+
+1464163266 source:d:\programowanie\plotter_lego-master\interpreter.cpp
+	"interpreter.h"
+
+1464163266 d:\programowanie\plotter_lego-master\interpreter.h
+	"board.h"
+	"servo.h"
+
+1464252020 d:\programowanie\plotter_lego-master\board.h
+	"head.h"
+	"engine.h"
+
+1464163266 d:\programowanie\plotter_lego-master\servo.h
+	<hFramework.h>
+
+1464163266 source:d:\programowanie\plotter_lego-master\main.cpp
+	<hFramework.h>
+	<stdio.h>
+	"engine.h"
+	"interpreter.h"
+
+1464163266 source:d:\programowanie\plotter_lego-master\servo.cpp
+	"servo.h"
+
+1464251646 source:d:\programowanie\plotter_lego-master\board.cpp
+	"board.h"
+
