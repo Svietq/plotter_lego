@@ -16,7 +16,7 @@ class Board
     const double resolution{0.1}; // dokladnosc
     double dist{1000};//between pulleys' edges
     const double headWidth{50}; // szerokosc glowicy
-    BoardDim boardOffset;
+    BoardDim boardOffset; // odsuniecie pola roboczego od bokow
     Head *_head;
     Engine _engine1;
     Engine _engine2;

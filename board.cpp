@@ -1,5 +1,12 @@
 #include "board.h"
 
+/** \brief Wyliczenie dlugosci linek silnikow
+ *
+ * \param ix int - pozycja w osi x w milimetrach
+ * \param iy int - pozycja w osi y w milimetrach
+ * \return Board::Line - dlugosci linek
+ *
+ */
 Board::Line Board::recalc_length(int ix, int iy)
 {
     line.a = sqrt(pow(boardOffset.x + ix,2) + pow(boardOffset.y + dim.y - iy,2));
@@ -15,6 +22,15 @@ Board::Board()
     boardOffset.y = 100;
 }
 
+
+/** \brief Wykonanie ruchu
+ *
+ * \param x2 float - pozycja w osi x, od lewego dolnego rogu do prawego dolnego rogu
+ * \param y2 float - pozycja w osi y, od lewego dolnego rogu do lewego gornego rogu
+ * \param speed float - szybkosc wykonania ruchu okreslona w milimetrach na minute
+ * \return void
+ *
+ */
 void Board::setPos(float x2, float y2, float speed)
 {
     Line line1;// = recalc_length(x2, y2);
