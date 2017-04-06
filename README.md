@@ -1,6 +1,8 @@
 # Lego Polar Plotter
 Plotter was created using lego mindstorms with Husarion control board. Code was written in C++
 
+Date: 2016-05-25
+
 # Description
 Ploter uses 2 motors with encoders in corners of a whiteboard. Motors are connected to the head using small ropes, which they can coil or unwind to change heads position.
 
